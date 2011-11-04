@@ -6,7 +6,8 @@
 	</head>
 
 	<body>
-		<h1>Estados Brasileiros</h1>
+        <h1>Estados Brasileiros</h1>
+        <h3>Dados trazidos de <a href="http://dbpedia.org/">dbpedia.org</a></h3>
 		<?php
 			require_once( "sparqllib.php" );
 			$db = sparql_connect( "http://dbpedia.org/sparql/" );
@@ -61,7 +62,7 @@
             print "</tr>";
             print "</table>";
 
-		?>
+        ?>
 	</body>
 
 </html>
